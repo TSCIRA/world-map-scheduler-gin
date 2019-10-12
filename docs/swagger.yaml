@@ -1,0 +1,31 @@
+swagger: '2.0'
+info:
+  version: 1.0.0
+  title: world-map-scheduler
+host: localhost:3000
+basePath: /
+
+definitions:
+  BossName:
+    properties:
+      boss_id:
+        type: integer
+        example: 0
+      boss_name:
+        type: string
+        example: ああああ
+
+paths:
+  '/boss':
+    get:
+      description: 全ボスの名前&ID取得
+      responses:
+        '200':
+          description: 成功
+          schema:
+            type: object
+            properties:
+              muscle_posts:
+                type: array
+                items:
+                  $ref: "#/definitions/MusclePost"
