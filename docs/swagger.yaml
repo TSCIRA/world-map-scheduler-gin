@@ -25,7 +25,7 @@ paths:
           schema:
             type: object
             properties:
-              muscle_posts:
+              bossnames:
                 type: array
                 items:
-                  $ref: "#/definitions/MusclePost"
+                  $ref: "#/definitions/BossName"
